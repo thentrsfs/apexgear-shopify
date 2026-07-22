@@ -2210,3 +2210,46 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     margin-top: calc(var(--header-height) * var(--transparent-header-offset-boolean) * -1);
   }
 }
+
+/* ==========================================================================
+   APEXGEAR CUSTOM STYLES
+   ========================================================================== */
+
+/* ==========================================================================
+   APEXGEAR HERO BUTTON
+   ========================================================================== */
+
+.hero .button-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+
+  padding: 16px 34px;
+
+  text-decoration: none;
+  letter-spacing: .02em;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.12);
+
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(12px);
+
+  transition: all .3s ease;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.35);
+}
+
+.hero .button-custom:hover {
+
+  transform: translateY(-2px);
+
+  background: rgba(255,255,255,.10);
+  border-color: #3B82F6;
+
+  box-shadow:
+  0 0 18px rgba(59,130,246,.20),
+  0 0 36px rgba(56,189,248,.10);
+}
