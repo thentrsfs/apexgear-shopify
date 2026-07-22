@@ -105,11 +105,11 @@
     "content_for_index": [],
     "color_palette": {
       "background": "#121212",
-      "foreground": "#1E1E1E",
+      "foreground": "#1e1e1e",
       "color1": "#f5f5f5",
-      "color2": "#A1A1AA",
+      "color2": "#a1a1aa",
       "color3": "{{ settings.color_palette.color2 }}",
-      "color4": "#7C3AED"
+      "color4": "#3B82F6"
     }
   },
   "presets": {
