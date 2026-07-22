@@ -1,0 +1,176 @@
+<div class="apex-specs-wrapper">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="apex-specs-title">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="apex-specs-grid">
+      {% for block in section.blocks %}
+        <div class="apex-spec-card" {{ block.shopify_attributes }}>
+          {% if block.settings.icon_text != blank %}
+            <div class="apex-spec-icon">{{ block.settings.icon_text }}</div>
+          {% endif %}
+          <h3 class="apex-spec-heading">{{ block.settings.title }}</h3>
+          <p class="apex-spec-text">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --apex-bg: #121212;
+    --apex-card-bg: #1e1e1e;
+    --apex-card-border: #2e2e2e;
+    --apex-card-border-hover: #404040;
+    --apex-text-main: #ffffff;
+    --apex-text-muted: #a3a3a3;
+  }
+
+  .apex-specs-wrapper {
+    padding: 80px 0;
+    background-color: var(--apex-bg);
+    color: var(--apex-text-main);
+  }
+
+  .apex-specs-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 48px;
+    color: var(--apex-text-main);
+  }
+
+  .apex-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .apex-spec-card {
+    background: var(--apex-card-bg);
+    border: 1px solid var(--apex-card-border);
+    padding: 32px;
+    border-radius: 8px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .apex-spec-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--apex-card-border-hover);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .apex-spec-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .apex-spec-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--apex-text-main);
+  }
+
+  .apex-spec-text {
+    font-size: 0.95rem;
+    color: var(--apex-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".apex-spec-card", {
+        scrollTrigger: {
+          trigger: ".apex-specs-wrapper",
+          start: "top 80%",
+          toggleActions: "play none none none"
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out"
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Apex Tech Specs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Why Choose ApexGear?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec_card",
+      "name": "Spec Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon_text",
+          "label": "Icon / Emoji",
+          "default": "⚡"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "Ultra-Fast Response"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "1ms latency with 2.4GHz wireless connection for flawless precision."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apex Tech Specs",
+      "blocks": [
+        {
+          "type": "spec_card",
+          "settings": {
+            "icon_text": "⚡",
+            "title": "Ultra-Fast Wireless",
+            "description": "1ms response time for gaming and uninterrupted coding sessions."
+          }
+        },
+        {
+          "type": "spec_card",
+          "settings": {
+            "icon_text": "🛠️",
+            "title": "Hot-Swappable",
+            "description": "Easily swap switches without soldering to customize your typing feel."
+          }
+        },
+        {
+          "type": "spec_card",
+          "settings": {
+            "icon_text": "🛡️",
+            "title": "CNC Aluminum Body",
+            "description": "Precision-machined casing for ultimate durability and premium acoustics."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
