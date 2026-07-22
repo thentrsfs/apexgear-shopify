@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>ENGINEERED<br/>FOR<br/>VICTORY</p>",
+            "text": "<p>ENGINEERED<br/>FOR<br/>PRECISION.</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -42,11 +42,11 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Premium mechanical keyboards designed<br/>for gamers, creators and professionals.</p>",
+            "text": "<p>Premium mechanical keyboards crafted for gamers, creators and professionals who demand precision and performance.</p>",
             "width": "fit-content",
-            "max_width": "none",
+            "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "paragraph",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -89,6 +89,7 @@
         "text_XePWet",
         "button_H9gpTf"
       ],
+      "custom_css": [],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -113,7 +114,7 @@
         "section_height_custom": 50,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
-        "overlay_color": "#000000",
+        "overlay_color": "#121212F5",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
