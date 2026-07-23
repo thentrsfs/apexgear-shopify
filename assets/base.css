@@ -2265,3 +2265,13 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   background-color: #475569 !important;
   color: #FFFFFF !important;
 }
+
+.hero__content-wrapper {
+  padding-left: 48px;
+}
+
+@media (max-width: 1024px) {
+  .hero__content-wrapper {
+    padding-left: 20px;
+  }
+}
