@@ -2253,3 +2253,15 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   0 0 18px rgba(59,130,246,.20),
   0 0 36px rgba(56,189,248,.10);
 }
+.color-custom-badge-sale {
+  background: rgba(59, 130, 246, 0.12) !important;
+  border: 1px solid rgba(59, 130, 246, 0.4) !important;
+  color: #60A5FA !important;
+  backdrop-filter: blur(8px);
+}
+
+/* Sold out badge */
+.color-custom-badge-sold-out {
+  background-color: #475569 !important;
+  color: #FFFFFF !important;
+}
