@@ -44,7 +44,7 @@
           "settings": {
             "text": "<p>Premium mechanical keyboards crafted for gamers, creators and professionals who demand precision and performance.</p>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "paragraph",
             "font": "var(--font-body--family)",
@@ -114,7 +114,7 @@
         "section_height_custom": 50,
         "background_color": "",
         "toggle_overlay": true,
-        "overlay_color": "#1C222B69",
+        "overlay_color": "#1c222b69",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": true,
