@@ -168,7 +168,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -215,7 +215,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 6,
             "background_color": "",
             "border": "none",
             "border_width": 1,
@@ -318,8 +318,8 @@
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 36,
-        "padding-block-end": 36
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "collection_list_Vyj48i": {
@@ -373,7 +373,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -486,8 +486,8 @@
         "section_width": "page-width",
         "gap": 12,
         "background_color": "",
-        "padding-block-start": 36,
-        "padding-block-end": 36
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     }
   },
