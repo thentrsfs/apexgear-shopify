@@ -368,7 +368,7 @@
   .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
   .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link,
   .menu-list .menu-list__list-item:is([slot='more'], [slot='overflow']) .menu-list__link[aria-expanded='true'] {
-    color: var(--menu-top-level-font-color);
+    color: #2196F3;
   }
 
   .overflow-menu::part(list) {
@@ -706,6 +706,32 @@
   .menu-list__list-item:not(:has([aria-expanded='true'])) > .menu-list__submenu product-component {
     display: none;
   }
+
+/* Custom styles */
+.menu-list__link-title {
+  position: relative;
+  transition: color .18s ease;
+}
+
+.menu-list__link-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 32px;          
+  height: 1.2px;
+  background: #2196F3;
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.menu-list__link:hover .menu-list__link-title::after,
+.menu-list__link--active .menu-list__link-title::after {
+  opacity: 1;
+}
+
 {% endstylesheet %}
 
 {% schema %}
