@@ -12,7 +12,7 @@
     "logo": "shopify://shop_images/apex-logo-copy.png",
     "logo_height": 50,
     "logo_height_mobile": 35,
-    "favicon": "shopify://shop_images/apex-icon.png",
+    "favicon": "shopify://shop_images/apex-icon_9f57a5de-394d-43c3-b36b-fc65308258cf.png",
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n5",
