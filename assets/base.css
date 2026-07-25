@@ -2289,7 +2289,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0,0,0,.45),
+        rgba(0,0,0,.70),
         rgba(0,0,0,0) 40%
     );
     z-index: 1;
